@@ -5,7 +5,6 @@ class Phone(Field):
         super().__init__(value)
 
     def validate(self):
-        # Валідація номера телефону (приклад)
         if len(self.value) == 10 and self.value.isdigit():
             return True
         else:
